@@ -1,2 +1,5 @@
 # Testes_LangChain_MentesNotaveis
 2 Langchain libraries examples of using, with LangGraph, Groq, Chains, and JSON files  
+The "Test1_LangChain.ipynb" is a simple chain using, like is commented in the documment, the system make a basic validation to make sure that is a math question(The focus of the system), and push a question to a json file, after, the json file is called again, for the model processing. The using of the system can be done by calling the main function, and passing the answer.
+The "Test2_LangChain.ipynb" is a little bit complex in terms of code, because the system is based on LangGraph's Supervisor using, that include tools, nodes, and graphs. The system makes a 2 step process with llm models, using the "llama-3.1-8b-instant" the hole system is based on the route control by the Supervisor LLM, that is instructed to detect math terms and symbols, than pass the question to a agent instructed to respond as a Math Teacher. The system can be used only by the last cell actioning, that provides the question to the hole graph. 
+Examples of using inclunding input and output are already in the files.
